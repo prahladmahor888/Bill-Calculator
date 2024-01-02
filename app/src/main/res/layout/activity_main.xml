@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:fontFamily="sans-serif-black"
+        android:text="Bill Calculator"
+        android:textColor="#3F51B5"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/Table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="95dp"
+                android:background="@drawable/box"
+                android:padding="7dp"
+                android:text="Items"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:background="@drawable/box"
+                android:padding="7dp"
+                android:text="Quantity"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="95dp"
+                android:background="@drawable/box"
+                android:padding="7dp"
+                android:text="Price"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="25sp"
+                tools:ignore="VisualLintBounds" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:background="@drawable/box"
+                android:padding="7dp"
+                android:text="Amount"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/multiply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Items"
+                android:layout_width="95dp"
+                android:background="@drawable/box"
+                android:inputType="text|textAutoCorrect|textCapWords"
+                android:padding="7dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/Quantity"
+                android:background="@drawable/box"
+                android:inputType="number|numberDecimal"
+                android:padding="7dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/Price"
+                android:layout_width="95dp"
+                android:background="@drawable/box"
+                android:padding="7dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="25sp"
+                tools:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/Amount"
+                android:background="@drawable/box"
+                android:padding="7dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Table"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="35sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="@string/submit"
+        android:layout_below="@+id/Result"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>
